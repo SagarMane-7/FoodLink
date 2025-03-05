@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.moneydonation {
+    height: 100vh;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tofooddonation {
+    height: 319px;
+    width: 260px;
+    font-size: 17px;
+    background-color: #2a2b6b;
+    color: white;
+    border-radius: 25px 0 0 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#tofoodbtn {
+    height: 25px;
+    width: 70px;
+    background-color: #2a2b6b;
+    color: #ffffff;
+    font-size: 17px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    transition: box-shadow 0.8s ease;
+    text-align: center;
+}
+
+#tofoodbtn:hover {
+    box-shadow: 5px 5px 20px #2a2b6b;
+    cursor: pointer;
+}
+
+#moneydonationform {
+    height: 315px;
+    width: 325px;
+    color: #2a2b6b;
+    background-color: #ffffff;
+    border: 2px solid #2a2b6b;
+    border-radius: 0 25px 25px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#mdtitle {
+    text-align: center;
+}
+
+#mdfname {
+    height: 25px;
+    width: 130px;
+    border: 2px solid #2a2b6b;
+    border-radius: 5px;
+}
+
+#mdlname {
+    height: 25px;
+    width: 130px;
+    border: 2px solid #2a2b6b;
+    border-radius: 5px;
+}
+
+#mdmobile {
+    height: 25px;
+    width: 130px;
+    border: 2px solid #2a2b6b;
+    border-radius: 5px;
+}
+
+#mdamount {
+    height: 25px;
+    width: 130px;
+    border: 2px solid #2a2b6b;
+    border-radius: 5px;
+}
+
+#email {
+    height: 25px;
+    width: 210px;
+    border: 2px solid #2a2b6b;
+    border-radius: 5px;
+}
+
+
+#mddonatebtn {
+    height: 35px;
+    width: 100px;
+    background-color: #f60;
+    color: #ffffff;
+    font-size: 23px;
+    border: 2px solid #2a2b6b;
+    border-radius: 10px;
+    transition: box-shadow 0.8s ease;
+    text-align: center;
+}
+
+#mddonatebtn:hover {
+    box-shadow: 5px 5px 20px #2a2b6b;
+    cursor: pointer;
+}
+
+#home {
+    color: #ffffff;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+/*
+To remove arrows in mobile number 
+*/
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
