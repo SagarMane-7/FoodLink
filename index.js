@@ -81,7 +81,7 @@ app.post("/Login", async (req, res) => {
     console.log("Logged in Sucessfully.")
     const availabledonations = await FoodDonation.find();
     const accepteddonations = await AcceptedDonation.find({ Accepted_By: req.session.user })
-    res.render('Dashboard.ejs', { availabledonations, accepteddonations: accepteddonations || [] });
+    res.render('Dashboard.ejs', { availabledonations: availabledonations || [], accepteddonations: accepteddonations || [] });
   }
 }
 );
@@ -178,7 +178,7 @@ app.post("/DonateMoney", async (req, res) => {
 app.get("/dashboard", islogged, async (req, res) => {
   const availabledonations = await FoodDonation.find();
   const accepteddonations = await AcceptedDonation.find({ Accepted_By: req.session.user })
-  res.render('Dashboard.ejs', { availabledonations, accepteddonations: accepteddonations || [] });
+  res.render('Dashboard.ejs', { availabledonations: availabledonations || [], accepteddonations: accepteddonations || [] });
 })
 
 app.get("/profile",islogged, async (req, res) => {
